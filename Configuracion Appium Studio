@@ -3,5 +3,8 @@ Paso a paso, como grabar tests en Appium Studio
 Requisitos:
 -Sistema operativo Windows
 
+Pasos previos de configuracion:
 
 1: Descargar e instalar Appium Studio desde https://experitest.com/mobile-test-automation/appium-studio/
+2: Descargar e instalar un IDE para Java, se recomienda la version Community de IntelliJ https://www.jetbrains.com/idea/download/
+3: Descargar e instalar Git https://git-scm.com/
