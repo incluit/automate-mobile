@@ -8,3 +8,34 @@ Pasos previos de configuracion:
 1: Descargar e instalar Appium Studio desde https://experitest.com/mobile-test-automation/appium-studio/
 2: Descargar e instalar un IDE para Java, se recomienda la version Community de IntelliJ https://www.jetbrains.com/idea/download/
 3: Descargar e instalar Git https://git-scm.com/
+4: Descargar e instalar el SDK de Android https://developer.android.com/studio/#downloads
+5: Crear un emulador // Conectar un celular mediante USB
+
+
+Como hacer recording:
+1: Descargar el .apk/.ipa de la aplicacion a la computadora local
+2: Abrir Appium Studio y desde la seccion Application hacer click en Import/Sign Application
+3: Buscar y abrir el archivo del paso 1
+4: Hacer click en Install Application en la seccion de Application
+5: Una vez instalada la aplicacion en el emulador/dispositivo hacer click en Start Record en la seccion Test
+6: Appium Studio iniciara su propio emulador, una vez que se haya hecho la interaccion que se desea grabar con este dispositivo, hacer click en Stop Recording
+7: Debajo de la seccion Test, ir a la seccion Code
+8: Seleccionar JUnit 5 + Appium Client 4
+9: Copiar el codigo comprendido en la funcion @Test
+
+
+Como editar el codigo:
+1: Clonar este proyecto (Maven)
+2: Abrirlo desde IntelliJ
+3: Crear una clase dentro de src/test/java 
+4: Extender dicha clase de UiBaseTest
+5: Pegar el codigo generado
+6: Editar para que corra correctamente
+
+
+Para generar el artefacto AWS:
+1: Abrir la terminal
+2: Ejecutar mvn clean install -DskipTests=true
+3: Verificar que se haya generado un .zip llamado zip-with-dependencies dentro de la carpeta Target
+
+
