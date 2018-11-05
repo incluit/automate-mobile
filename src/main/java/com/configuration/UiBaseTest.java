@@ -20,22 +20,20 @@ public class UiBaseTest {
     public AppiumDriver start() throws Exception {
         return driver;
     }
-
     @AfterClass
     public void stop() throws Exception {
         if (driver != null) {
             driver.quit();
         }
     }
-
     public AndroidDriver driver()  {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.VERSION, "7.1.1");
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "LGH73547d7ec4a");
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         capabilities.setCapability("autoGrantPermissions", "true");
-        capabilities.setCapability("appPackage", "com.amazonaws.devicefarm.android.referenceapp");
-        capabilities.setCapability("appActivity", "com.amazonaws.devicefarm.android.referenceapp.Activities.MainActivity");
+            capabilities.setCapability("appPackage", "com.amazonaws.devicefarm.android.referenceapp");
+            capabilities.setCapability("appActivity", "com.amazonaws.devicefarm.android.referenceapp.Activities.MainActivity");
         try {
             driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         } catch (MalformedURLException e) {
