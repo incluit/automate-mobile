@@ -14,7 +14,7 @@ Pasos previos de configuracion:
 5: Crear un emulador // Conectar un celular mediante USB
 
 
-*SET Appium Inspector*
+#SET Appium Inspector
 
 platformName = Android
 deviceName = cualquier cosa
