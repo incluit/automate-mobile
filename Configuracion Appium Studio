@@ -5,11 +5,21 @@ Requisitos:
 
 Pasos previos de configuracion:
 
+
+
 1: Descargar e instalar Appium Studio desde https://experitest.com/mobile-test-automation/appium-studio/
 2: Descargar e instalar un IDE para Java, se recomienda la version Community de IntelliJ https://www.jetbrains.com/idea/download/
 3: Descargar e instalar Git https://git-scm.com/
 4: Descargar e instalar el SDK de Android https://developer.android.com/studio/#downloads
 5: Crear un emulador // Conectar un celular mediante USB
+
+
+*SET Appium Inspector*
+
+platformName = Android
+deviceName = cualquier cosa
+appPackage = com.amazonaws.devicefarm.android.referenceapp
+appActivity = com.amazonaws.devicefarm.android.referenceapp.Activities.MainActivity
 
 
 Como hacer recording:
